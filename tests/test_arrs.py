@@ -9,6 +9,6 @@ def test_get():
 def test_slice():
     assert arrs.my_slice([1, 2, 3, 4], 1, 3) == [2, 3]
     assert arrs.my_slice([1, 2, 3], 1) == [2, 3]
-    assert arrs.my_slice([1, 2, 3, 4], -1, 3) == []
-    assert arrs.my_slice([], 1, 3) == []
-    assert arrs.my_slice([1], -5, 1) == [1]
+    assert arrs.my_slice([1, 2, 3, 4], -1, 3) == []     # проверка 40-43
+    assert arrs.my_slice([], 1, 3) == []                # проверка 33
+    assert arrs.my_slice([1], -5, 1) == [1]             # проверка 41
